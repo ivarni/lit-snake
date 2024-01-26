@@ -1,0 +1,49 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --snek-color: hsl(120deg 50.03% 37.47%);
+  --snek-color-2: hsl(120deg 50.03% 17.47%);
+  --apple-color: hsl(0deg 87.97% 37.02%);
+  --apple-color-2: hsl(0deg 87.97% 17.02%);
+  --light-color: hsl(0deg 0.53% 74.56%);
+  --dark-color: hsl(0deg 7.63% 48.82%);
+
+  --game-field-color: var(--dark-color);
+  --game-field-background: var(--light-color);
+
+  @media (prefers-color-scheme: dark) {
+    --snek-color: hsl(120deg 65.38% 59.55%);
+    --snek-color-2: hsl(120deg 65.38% 29.55%);
+    --game-field-color: var(--light-color);
+    --game-field-background: var(--dark-color);
+  }
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--game-field-background);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+
